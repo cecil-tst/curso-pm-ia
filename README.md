@@ -16,6 +16,18 @@
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
 
+## Interfaz v5.4 — Legibilidad y navegación
+
+Esta versión incorpora las primeras mejoras de experiencia de lectura solicitadas por los participantes:
+
+- **Textos significativamente más grandes** en lectura, navegación, botones y paneles; contenido principal a **18 px** en escritorio y **17 px** en móvil.
+- **Panel derecho simplificado:** «Cómo usar este curso», «Tu cuaderno» y «Mis notas» son desplegables **cerrados por defecto**.
+- **Selector de idioma arriba a la derecha**, siempre visible, sin etiqueta redundante ni banderas; el icono **ⓘ** revela la explicación al pasar el cursor o pulsar.
+- **Menú izquierdo reorganizado:** «Itinerario formativo» y «Recursos reutilizables» son desplegables independientes y cerrados inicialmente; el segundo agrupa prompts, glosario, guías, lista de verificación y fuentes.
+- «Aprender · Construir · Verificar» aparece inmediatamente **debajo del logotipo**.
+- La **versión visible al final del menú izquierdo** es `v5.4`.
+- Se conserva la misma estructura de **36 lecciones**, los PDF, los enlaces temporales, el cuaderno global de destacados y los metadatos Open Graph.
+
 ## Contenidos y características
 
 - **9 módulos**, **36 lecciones**, **59 enlaces a momentos concretos** de los vídeos originales y **29 términos** de glosario.

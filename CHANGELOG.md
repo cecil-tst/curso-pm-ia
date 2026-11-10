@@ -2,6 +2,15 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.4 — Lectura más cómoda y menos información simultánea
+
+- Aumento de la tipografía general y del texto de lección a 18 px (17 px en móvil).
+- Los tres paneles de la columna derecha se abren a demanda y empiezan cerrados.
+- Selector de idiomas trasladado a la parte superior derecha, con información en un botón ⓘ accesible por clic y hover.
+- Navegación izquierda agrupada en «Itinerario formativo» y «Recursos reutilizables», ambas secciones plegadas al comenzar.
+- Lema bajo el logo y versión de interfaz en el pie del menú izquierdo.
+- Aplicado en español, inglés y catalán; sin alteraciones en PDFs, progreso ni anotaciones.
+
 ## 2026-11-10 — Actualización de documentación
 
 - Se actualiza `README.md` para reflejar exactamente el estado publicado.

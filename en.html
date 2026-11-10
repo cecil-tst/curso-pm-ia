@@ -212,16 +212,128 @@
 .lesson .tag-adv{background:#f7e3cc!important;border-color:#dcb997!important;color:#855226!important}
 .lesson .tag-tech{display:inline-flex;align-items:center;justify-content:center;letter-spacing:.45px;font-size:10px;font-weight:850;border-radius:5px;padding:5px 8px;white-space:nowrap;background:#996644!important;border:1px solid #996644!important;color:#fff!important}
 .lesson .tag-base{background:#fff4e9!important;border-color:#ecd9c4!important;color:#996e4d!important}
-</style><style>.language-panel{margin-top:17px;margin-bottom:18px;padding:12px;border-radius:12px;background:white;border:1px solid #cddfda;box-shadow:0 2px 9px #163f4210}.language-panel label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:850;color:#165e67;margin-bottom:8px}.language-panel select{appearance:auto;background:#f4f9f7;border:1px solid #b5d3ca;border-radius:9px;padding:9px 11px;color:#204a50;font-weight:750;width:100%;min-height:40px}.lang-help{font-size:10.2px;line-height:1.45;color:#647b7c;margin:9px 0 0}.lang-help:empty{display:none}@media(max-width:780px){.language-panel{margin:12px 0 17px}}.hl-block.action:before{content:"IN PRACTICE · "}</style><style>.lang-control{display:flex;align-items:center;gap:9px}.lang-control select{width:100%;min-width:0;flex:1}.hl-linked{background:#e3f5ea!important;box-shadow:inset 0 -2px 0 #3a9a7c}</style></head>
+</style><style>.language-panel{margin-top:17px;margin-bottom:18px;padding:12px;border-radius:12px;background:white;border:1px solid #cddfda;box-shadow:0 2px 9px #163f4210}.language-panel label{display:flex;align-items:center;gap:7px;font-size:12px;font-weight:850;color:#165e67;margin-bottom:8px}.language-panel select{appearance:auto;background:#f4f9f7;border:1px solid #b5d3ca;border-radius:9px;padding:9px 11px;color:#204a50;font-weight:750;width:100%;min-height:40px}.lang-help{font-size:10.2px;line-height:1.45;color:#647b7c;margin:9px 0 0}.lang-help:empty{display:none}@media(max-width:780px){.language-panel{margin:12px 0 17px}}.hl-block.action:before{content:"IN PRACTICE · "}</style><style>.lang-control{display:flex;align-items:center;gap:9px}.lang-control select{width:100%;min-width:0;flex:1}.hl-linked{background:#e3f5ea!important;box-shadow:inset 0 -2px 0 #3a9a7c}</style><style id="ux-v54">
+/* v5.4 · increased legibility, progressive disclosure and reorganized navigation */
+:root{--reading-size:18px}
+body{font-size:17px;line-height:1.68}
+.layout{max-width:1780px}
+@media(min-width:1191px){.layout{grid-template-columns:282px minmax(0,1fr) 325px}}
+.nav{display:flex;flex-direction:column;gap:0;padding:26px 18px 18px}
+.logo{font-size:24px;line-height:1.25}
+.logo .mark{width:41px;height:41px;font-size:21px}
+.nav-motto{margin:8px 0 2px 1px;font-size:14px;line-height:1.55;color:#476a69;font-weight:650;letter-spacing:.08px}
+.nav-heading{font-size:12.5px;margin-top:21px;margin-bottom:9px}
+.nav-group summary{font-size:15.5px;line-height:1.38;min-height:52px}
+.sidenav .nav-primary{font-size:14.4px;min-height:43px;line-height:1.42}
+.nav-module-list button{font-size:14px;line-height:1.5;padding-top:11px;padding-bottom:11px}
+.nav-resource-list{padding:4px 1px 9px 8px;display:flex;flex-direction:column;gap:1px}
+.nav-resource-list button{padding:11px 8px;border-bottom:1px solid #dfe8e5;min-height:44px}
+.nav-resource-list button:last-child{border:0}
+.nav-foot{font-size:13.2px;line-height:1.6;margin-top:auto;padding-top:16px}
+.interface-version{border-top:1px solid #d6e0df;margin-top:10px;padding-top:12px;color:#527576;font-size:13px;line-height:1.5;font-weight:750;letter-spacing:.15px}
+.progress-wrap{margin-top:20px;margin-bottom:17px;padding:16px}
+.progress-wrap small{font-size:14px}
+.kicker,.section-cap,.filter-heading{font-size:12.5px}
+.hero .kicker,.hero-credit .credit-label{font-size:12.5px}
+.hero p{font-size:18px;line-height:1.65}
+.hero-credit{font-size:14.5px}
+.hero-tags span{font-size:14px}
+.topline .mini{font-size:14px}
+h1{font-size:clamp(35px,3.5vw,52px)}
+h2{font-size:27px;line-height:1.26}
+h3,.lesson-top h3{font-size:20px;line-height:1.38}
+.module summary p{font-size:16px;line-height:1.6}
+.module summary{padding:24px 24px 22px}
+.module-inner{padding:24px 25px}
+.module-level,.module-done-badge{font-size:12px;white-space:normal;line-height:1.3}
+.module-complete-toggle{font-size:13.5px;line-height:1.35}
+.topic-pill{font-size:12px}
+.lesson{padding:21px 0}
+.hl-block{font-size:var(--reading-size);line-height:1.8;color:#354d59}
+.hl-block.action{font-size:17.5px;line-height:1.72;padding:15px 16px}
+.hl-block.action:before{font-size:12px;letter-spacing:.4px}
+.objective{font-size:16.5px;line-height:1.7;padding:16px 17px}
+.exercise{padding:20px}
+.exercise ol,.exercise li,.exercise p{font-size:16px;line-height:1.65}
+.outcome{font-size:16px;line-height:1.65}
+.warning{font-size:15px;line-height:1.65}
+.lesson .tag-base,.lesson .tag-adv,.lesson .tag-tech{font-size:12px}
+.done-label{font-size:14.5px}
+.done-label input{width:18px;height:18px}
+.video-links a{font-size:14.2px;line-height:1.55;padding:7px 10px}
+.search{font-size:16px;min-height:45px}
+.chip{font-size:14px;line-height:1.45;padding:7px 12px}
+.lightbutton,.primary,.secondary,.all-collapse{font-size:14px;line-height:1.48;padding:10px 13px}
+.tools-toggle{font-size:15px}
+.tip{font-size:15px;line-height:1.65}
+.prompt strong,.prompt p,.source-index,.term,.misc details .content{font-size:15.5px;line-height:1.65}
+.misc details summary{font-size:17px}
+.notebook-part p,.side-card p,.side-card li{font-size:15px;line-height:1.65}
+.notebook-part h4,.side-card h3{font-size:16.5px}
+.export-actions button,.download-main{font-size:14.5px;line-height:1.5}
+.note-item,.note-item button,.empty{font-size:14.5px;line-height:1.58}
+.mutednote{font-size:13.5px}
+.dialog .quote,.dialog label,.dialog textarea{font-size:15.5px!important;line-height:1.6}
+.selection-banner,.selection-banner button,.toast{font-size:14.5px}
+/* The first right-side card (language) always stays visible. */
+.sidebar{padding:28px 18px;background:#f3f5f2}
+.language-panel{margin:0 0 13px;padding:14px 15px;border-radius:14px;background:#fff;border:1px solid #cddfda;box-shadow:0 2px 9px #163f4210}
+.language-row{display:flex;align-items:center;gap:10px}
+.language-row .lang-control{flex:1;min-width:0}
+.language-panel select{font-size:16px;min-height:46px;padding:10px 12px;width:100%;color:#1c555a}
+.language-info{position:relative;flex:0 0 37px;align-self:center;z-index:20}
+.language-info-button{list-style:none;display:grid;place-items:center;border:1px solid #b8d8ce;border-radius:50%;width:37px;height:37px;background:#eef7f2;color:#19666c;font-size:19px;font-weight:800;cursor:pointer;user-select:none;line-height:1}
+
+.language-info-button:focus-visible{outline:3px solid #e88e64;outline-offset:2px}
+.language-info-button:focus,.language-info-button:hover{background:#dff1e9;border-color:#8ebfaf}
+.language-popover{display:none;position:absolute;z-index:100;right:-3px;top:calc(100% + 10px);width:min(288px,calc(100vw - 35px));background:#fff;border:1px solid #c6ded8;border-radius:11px;box-shadow:0 12px 30px #123b4840;padding:13px 14px}
+.language-popover::before{content:"";position:absolute;right:14px;top:-6px;width:10px;height:10px;transform:rotate(45deg);border-top:1px solid #c6ded8;border-left:1px solid #c6ded8;background:#fff}
+.language-popover .lang-help{margin:0;font-size:14.3px;line-height:1.6;color:#435f66}
+.language-info:hover>.language-popover,.language-info:focus-within>.language-popover{display:block}
+/* All right-side information cards start collapsed. */
+.side-disclosure{padding:0;overflow:visible;margin-bottom:13px}
+.side-disclosure>summary{list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:17px 16px;min-height:62px;color:#1a5962;line-height:1.4}
+.side-disclosure>summary::-webkit-details-marker{display:none}
+.side-disclosure>summary:hover,.side-disclosure[open]>summary{background:#f6faf8}
+.side-summary-text{display:grid;gap:4px;min-width:0}
+.side-summary-label{font-size:16px;font-weight:850;line-height:1.35}
+.side-summary-desc{font-size:13.8px;font-weight:550;color:#607b7b;line-height:1.36}
+.side-chevron{font-size:24px;flex-shrink:0;line-height:1;color:#377f7f;transition:transform .17s}
+.side-disclosure[open] .side-chevron{transform:rotate(180deg)}
+.side-disclosure-body{padding:17px 16px 18px;border-top:1px solid var(--edge)}
+.side-disclosure-body .notebook-part:first-child{margin-top:0}
+.side-note-counter{font-size:14px;color:#4b7470;background:#e9f5f1;border-radius:20px;padding:3px 8px}
+.side-disclosure summary:focus-visible{outline:3px solid #e88e64;outline-offset:-3px}
+@media(max-width:1190px){.sidebar{padding:0 28px 26px}}
+@media(max-width:780px){
+  body{font-size:16.5px}
+  .nav{padding:17px 16px}
+  .sidenav{display:flex}
+  .nav-foot{display:block;margin-top:15px}
+  .interface-version{display:block}
+  .sidebar{padding:0 14px 26px}
+  .module summary{padding:18px}
+  .module-inner{padding:18px}
+  .hl-block{font-size:17px;line-height:1.75}
+  .hl-block.action{font-size:16.8px}
+  .side-disclosure>summary{min-height:60px}
+  .hero p{font-size:17px}
+  .filter-row{gap:7px}
+}
+@media print{
+ .nav,.sidebar{display:none!important}
+ .module-inner,.side-disclosure-body{display:block!important}
+}
+</style></head>
 <body><div class="layout">
-<aside class="nav"><div class="logo"><span class="mark">P+</span><span>PM / IA</span></div><section aria-label="Language / Idioma / Llengua" class="language-panel"><label for="langSelect"><span aria-hidden="true" class="language-symbol">🌐</span> <span>Language</span></label><div class="lang-control"><select aria-label="Select language / Seleccionar idioma / Selecciona la llengua" id="langSelect"><option value="es">Español</option><option value="en">English</option><option value="ca">Català</option></select></div><p class="lang-help">Progress, highlights and comments are shared across all three languages. Translations highlight the corresponding sentence.</p></section><div class="muted" style="font-size:12px;margin-top:6px">Learn · Build · Verify</div><div class="progress-wrap"><div class="kicker">Your progress</div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><small id="progressText">0 of 36 lessons</small></div><div class="nav-heading">COURSE CONTENTS</div><nav aria-label="COURSE CONTENTS" class="sidenav" id="sidenav"><details class="nav-group" id="navModules"><summary><span>▤   Modules</span><span aria-hidden="true" class="nav-arrow"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span></summary><div class="nav-module-list" id="navModuleItems"></div></details><button class="nav-primary" data-anchor="prompts" type="button"><span aria-hidden="true">✧</span> Prompts</button><button class="nav-primary" data-anchor="glossary" type="button"><span aria-hidden="true">◈</span> Glossary</button><button class="nav-primary" data-anchor="workshops" type="button"><span aria-hidden="true">▧</span> Facilitator guide</button><button class="nav-primary" data-anchor="checks" type="button"><span aria-hidden="true">☑</span> Quality checklist</button><button class="nav-primary" data-anchor="sources" type="button"><span aria-hidden="true">▣</span> Sources</button></nav><p class="nav-foot"><strong>Course by Cecil Servan.</strong> Based on 7 videos by Javier Garzás · Timestamped links go directly to YouTube.</p></aside>
+<aside class="nav"><div class="logo"><span class="mark">P+</span><span>PM / IA</span></div><div class="nav-motto">Learn · Build · Verify</div><div class="progress-wrap"><div class="kicker">Your progress</div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><small id="progressText">0 of 36 lessons</small></div><div class="nav-heading">NAVIGATION</div><nav aria-label="NAVIGATION" class="sidenav" id="sidenav"><details class="nav-group" id="navModules"><summary><span>▤ &nbsp;Learning pathway</span><span aria-hidden="true" class="nav-arrow"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span></summary><div class="nav-module-list" id="navModuleItems"></div></details><details class="nav-group" id="navResources"><summary><span>✧ &nbsp;Reusable resources</span><span aria-hidden="true" class="nav-arrow"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span></summary><div class="nav-resource-list"><button class="nav-primary" data-anchor="prompts" type="button"><span aria-hidden="true">✧</span> Prompts</button><button class="nav-primary" data-anchor="glossary" type="button"><span aria-hidden="true">◈</span> Glossary</button><button class="nav-primary" data-anchor="workshops" type="button"><span aria-hidden="true">▧</span> Facilitator guide</button><button class="nav-primary" data-anchor="checks" type="button"><span aria-hidden="true">☑</span> Quality checklist</button><button class="nav-primary" data-anchor="sources" type="button"><span aria-hidden="true">▣</span> Sources</button></div></details></nav><p class="nav-foot"><strong>Course by Cecil Servan.</strong> Based on 7 videos by Javier Garzás · Timestamped links go directly to YouTube.</p><div class="interface-version">Interface version · v5.4</div></aside>
 <main class="main" id="main"><div class="topline"><div class="kicker">Practical course / 2026 edition</div><div class="mini">9 modules · 36 lessons · 3 levels</div></div>
 <section class="hero"><div class="kicker">COURSE / PROJECT &amp; PRODUCT MANAGEMENT</div><h1>Lead projects<br/>with AI. And build.</h1><p>A practical route from chatting with AI to working with context, connecting data, building prototypes and automating processes. Designed for creative, generalist and technically minded PMs.</p><div class="hero-credit"><span class="credit-label">COURSE AUTHOR</span><strong>Cecil Servan</strong><span class="credit-sep">·</span><span>Developed from <strong>7 videos by Javier Garzás</strong></span></div><div class="hero-tags"><span>9 practical modules</span><span>7 videos / 2 h 53 min</span><span>59 timestamped video links</span><span>Private reading notes</span></div></section>
 <section aria-label="Herramientas de navegación" class="toolbar compact" id="toolsPanel"><div class="toolbar-head"><button aria-controls="toolsBody" aria-expanded="false" class="tools-toggle" id="toggleTools" type="button"><span aria-hidden="true" id="toolArrow"><svg fill="none" height="21" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.8" viewbox="0 0 24 24" width="21"><path d="m5 14 7-7 7 7"></path></svg></span><span id="toolsLabel">Show search and filters</span></button><button class="lightbutton all-collapse" id="collapseAll" title="Collapse all" type="button"><span aria-hidden="true">⊟</span> Collapse all</button></div><div hidden="" id="toolsBody"><div class="searchline"><input aria-label="Search the course" class="search" id="search" placeholder="Search concepts, examples, tools…" type="search"/><button class="lightbutton" id="clearSearch" title="Clear">Clear</button></div><div class="filter-block"><div class="filter-heading"><span aria-hidden="true" class="filter-icon">◈</span> TOPIC</div><div class="filter-row" id="filters"></div></div><div class="filter-block level-block"><div class="filter-heading"><span aria-hidden="true" class="filter-icon">◉</span> LEVEL</div><div class="filter-row" id="audiences"></div></div><div class="filter-block progress-block"><div class="filter-heading"><span aria-hidden="true" class="filter-icon">✓</span> PROGRESS</div><div class="filter-row" id="progressFilters"></div></div><div class="tip" id="selectionHelp"><span aria-hidden="true" class="tip-light">💡</span><span>Select text in a lesson, click <strong>Highlight selection</strong> and you can add a comment.</span></div><div class="mutednote" id="resultsText" style="margin-top:10px">9 modules available</div></div></section>
 <section class="section-cap">Learning path</section><div id="modules"></div>
 <section class="misc"><div class="section-cap">Reusable resources</div><details id="prompts"><summary>5 ready-to-adapt work prompts</summary><div class="content" id="promptsContent"></div></details><details id="glossary"><summary>Accessible glossary: <span id="glossaryTotal">29</span> terms</summary><div class="content gloss" id="glossaryContent"></div></details><details id="workshops"><summary>Facilitator guide: 3 team workshops</summary><div class="content workshop-content"><p class="aux-intro">A way to turn the concepts into short team exercises. Use sample data or information you have permission to share.</p><div class="workshop-card"><div class="workshop-meta"><span class="workshop-number">01</span><span class="workshop-duration">40 MIN</span></div><h3>Context and workflows</h3><p>Each participant drafts a project context, identifies a redundant process and tries a verifiable question.</p><p class="workshop-deliverable"><b>OUTPUT:</b> First use case and the sources it needs.</p></div><div class="workshop-card"><div class="workshop-meta"><span class="workshop-number">02</span><span class="workshop-duration">45 MIN</span></div><h3>Decisions and prototypes</h3><p>One group prepares a dashboard with sample data; another explores discovery and prototyping; technical participants suggest integrations and acceptance criteria.</p><p class="workshop-deliverable"><b>OUTPUT:</b> A demo with hypotheses and validation criteria.</p></div><div class="workshop-card"><div class="workshop-meta"><span class="workshop-number">03</span><span class="workshop-duration">45 MIN</span></div><h3>Routines and safeguards</h3><p>Design an automation with least privilege, a human approver and a rollback plan; debate whether to scale it.</p><p class="workshop-deliverable"><b>OUTPUT:</b> Pilot proposal, risks and owner.</p></div><div class="rubric-card"><b>ASSESSMENT RUBRIC</b><p>Rate 1–5: usefulness, source quality, adoption effort, cost and risk. Compare ratings before making a decision.</p></div></div></details><details id="checks"><summary>Checklist before publishing</summary><div class="content" id="checksContent"></div></details><details id="sources"><summary>Sources: seven original videos</summary><div class="content source-index" id="sourcesContent"></div></details></section>
 </main>
-<aside class="sidebar"><section class="side-card usage-card"><div class="kicker">How to use this course</div><ul><li>Filter by topic, level and progress; open only the module you need.</li><li>Mark lessons and modules as done.</li><li>Open video excerpts at the linked timestamp.</li><li>Select the text you want to highlight, use the button and optionally add a comment.</li><li>Export notes or keep a JSON backup of your progress.</li></ul></section><section class="side-card notebook"><div class="kicker">Your notebook</div><h3 class="notebook-title">Reading, notes and downloads</h3><div class="notebook-part"><h4><span>01</span> Full course</h4><p>Download the complete PDF course, including links to the videos.</p><button class="download-main" id="downloadFullPDF"><span aria-hidden="true" class="download-icon">↓</span> Download course PDF</button></div><div class="notebook-part"><h4><span>02</span> Your highlights</h4><p>Export only the passages you highlighted and the comments you added.</p><div class="export-actions"><button id="exportMd"><span aria-hidden="true">↓</span> Highlights .md</button><button id="exportPdf"><span aria-hidden="true">↓</span> Highlights PDF</button></div></div><div class="notebook-part"><h4><span>03</span> Save and restore JSON</h4><p>Progress and notes are stored only in this browser. Download a JSON file to back them up or move them to another device; restoring replaces current data.</p><div class="export-actions"><button id="exportBackup"><span aria-hidden="true">↓</span> Download .json</button><button id="importBackup"><span aria-hidden="true">↑</span> Restore .json</button></div><input accept="application/json,.json" hidden="" id="importFile" type="file"/></div></section><section class="side-card"><div style="display:flex;justify-content:space-between;align-items:center"><h3 style="margin:0">My notes</h3><small id="notesCount">0</small></div><div id="notesList" style="margin-top:10px"><p class="empty">No text highlighted yet.</p></div></section></aside></div>
+<aside class="sidebar"><section aria-label="Language / Idioma / Llengua" class="language-panel"><div class="language-row"><div class="lang-control"><select aria-label="Select language / Seleccionar idioma / Selecciona la llengua" id="langSelect"><option value="es">Español</option><option value="en">English</option><option value="ca">Català</option></select></div><div class="language-info" id="languageInfo"><button type="button" class="language-info-button" aria-label="Information about languages and your notes" aria-describedby="langHelp" title="Information about languages and your notes">ⓘ</button><div class="language-popover" id="langHelp" role="tooltip"><p class="lang-help">Progress, highlights and comments are shared across all three languages. Translations highlight the corresponding sentence.</p></div></div></div></section><details class="side-card side-disclosure usage-card"><summary><span class="side-summary-text"><span class="side-summary-label">How to use this course</span></span><span aria-hidden="true" class="side-chevron">⌄</span></summary><div class="side-disclosure-body"><ul><li>Filter by topic, level and progress; open only the module you need.</li><li>Mark lessons and modules as done.</li><li>Open video excerpts at the linked timestamp.</li><li>Select the text you want to highlight, use the button and optionally add a comment.</li><li>Export notes or keep a JSON backup of your progress.</li></ul></div></details><details class="side-card side-disclosure notebook"><summary><span class="side-summary-text"><span class="side-summary-label">Your notebook</span><span class="side-summary-desc">Reading, notes and downloads</span></span><span aria-hidden="true" class="side-chevron">⌄</span></summary><div class="side-disclosure-body"><div class="notebook-part"><h4><span>01</span> Full course</h4><p>Download the complete PDF course, including links to the videos.</p><button class="download-main" id="downloadFullPDF"><span aria-hidden="true" class="download-icon">↓</span> Download course PDF</button></div><div class="notebook-part"><h4><span>02</span> Your highlights</h4><p>Export only the passages you highlighted and the comments you added.</p><div class="export-actions"><button id="exportMd"><span aria-hidden="true">↓</span> Highlights .md</button><button id="exportPdf"><span aria-hidden="true">↓</span> Highlights PDF</button></div></div><div class="notebook-part"><h4><span>03</span> Save and restore JSON</h4><p>Progress and notes are stored only in this browser. Download a JSON file to back them up or move them to another device; restoring replaces current data.</p><div class="export-actions"><button id="exportBackup"><span aria-hidden="true">↓</span> Download .json</button><button id="importBackup"><span aria-hidden="true">↑</span> Restore .json</button></div><input accept="application/json,.json" hidden="" id="importFile" type="file"/></div></div></details><details class="side-card side-disclosure notes-card"><summary><span class="side-summary-label">My notes</span><span class="side-note-counter" id="notesCount">0</span><span aria-hidden="true" class="side-chevron">⌄</span></summary><div class="side-disclosure-body"><div id="notesList" style="margin-top:10px"><p class="empty">No text highlighted yet.</p></div></div></details></aside></div>
 <div class="selection-banner" hidden="" id="selectionBanner"><span id="selectionSummary">Text selected</span><button id="highlightSelection">✎ Highlight selection</button><button aria-label="Cancelar selección" id="dismissSelection" style="padding:4px 8px">×</button></div>
 <div class="modal-backdrop" hidden="" id="modal"><div aria-labelledby="modalTitle" aria-modal="true" class="dialog" role="dialog"><h2 id="modalTitle">Add a comment</h2><div class="quote" id="modalQuote"></div><label for="modalText" style="font-size:12px;font-weight:800">Comment (optional)</label><textarea id="modalText" placeholder="Idea to try, question, relevant example…"></textarea><div class="dialog-actions"><button class="lightbutton" id="cancelNote">Cancel</button><button class="primary" id="saveNote">Save highlight</button></div></div></div>
 <div class="toast" hidden="" id="toast"></div>
