@@ -6,23 +6,24 @@ Autor: **Cecil Servan**. Elaborado a partir de **7 vídeos públicos de Javier G
 
 - 🇪🇸 Español: [index.html](index.html) → `/`
 - 🇬🇧 English: [en.html](en.html) → `/en.html`
-- 🇦🇩 Català: [ca.html](ca.html) → `/ca.html`
+- Català (Catalunya): [ca.html](ca.html) → `/ca.html` (el selector muestra la senyera de Catalunya)
 
-Las tres versiones contienen 9 módulos, 36 lecciones, 59 enlaces a tiempos exactos de los vídeos y 29 términos del glosario. Los vídeos originales están en español.
+Cada idioma tiene 9 módulos, 36 lecciones, 59 enlaces temporales a los vídeos y 29 términos de glosario. Los vídeos originales permanecen en español.
 
-Cada archivo HTML integra su PDF en base64 para poder descargarlo sin otros archivos. También se incluyen PDFs independientes:
-- [Español](Curso_PM_IA_formacion_es_v5.pdf)
-- [English](Curso_PM_IA_formacion_en_v5.pdf)
-- [Català](Curso_PM_IA_formacion_ca_v5.pdf)
+Los HTML incorporan sus respectivos PDF para descarga autónoma. Los PDF también están disponibles por separado: [ES](Curso_PM_IA_formacion_es_v5.pdf) · [EN](Curso_PM_IA_formacion_en_v5.pdf) · [CA](Curso_PM_IA_formacion_ca_v5.pdf).
 
 ## Publicación
 
-El repositorio está conectado a Vercel: los commits en `main` publican automáticamente en [curso-pm-ia.vercel.app](https://curso-pm-ia.vercel.app). No se requiere compilación ni dependencias.
+`main` despliega automáticamente en [curso-pm-ia.vercel.app](https://curso-pm-ia.vercel.app) a través de Vercel. No hay compilación ni dependencias.
 
-## Progreso y anotaciones
+## Progreso, destacados y comentarios
 
-El progreso (lecciones completadas) se comparte entre los idiomas mediante almacenamiento local del navegador. Los destacados y comentarios se guardan por idioma para no aplicar offsets de selección sobre una traducción distinta. Se pueden exportar las notas a Markdown o PDF, y crear/restaurar copias JSON; estas deben restaurarse en su idioma de origen.
+El progreso, los destacados y los comentarios están **compartidos por idioma en el mismo navegador** mediante `localStorage`. Las notas antiguas creadas en los tres idiomas se combinan automáticamente al entrar en la versión nueva, conservando la lengua original de cada fragmento.
 
-**No hay cuentas, servidores de datos ni sincronización entre dispositivos.** Las anotaciones de cada lector son privadas para su navegador.
+Un destacado mantiene su **selección exacta en el idioma original**; al leerlo en otra traducción se marca la **frase equivalente completa** para evitar errores por diferencias de longitud. Los comentarios del lector no se traducen automáticamente.
 
-© Cecil Servan. Basado en vídeos de Javier Garzás (enlaces a los originales dentro del curso).
+Las exportaciones Markdown/PDF muestran las citas en su idioma de origen; las copias JSON v5 incluyen todas las notas y pueden restaurarse en cualquiera de los idiomas. Se pueden fusionar copias JSON anteriores de un solo idioma.
+
+**No se sincroniza entre navegadores, dispositivos o usuarios.** No existe servidor de notas: cada lector tiene sus datos privados en ese navegador.
+
+© Cecil Servan. Basado en vídeos públicos de Javier Garzás (enlaces a los originales dentro del curso).
