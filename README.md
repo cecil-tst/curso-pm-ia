@@ -16,6 +16,19 @@
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
 
+## Interfaz v5.5 — Experiencia móvil y tableta vertical
+
+En **móvil (vertical y horizontal) y tableta en vertical** la portada empieza inmediatamente después del logotipo y «Aprender · Construir · Verificar». Se ocultan las columnas laterales y los controles originales se trasladan sin duplicarse a dos paneles de **pantalla completa**:
+
+- **Menú** (icono de lista): selección de idioma, búsqueda/filtros e itinerario de navegación.
+- **Herramientas** (icono de deslizadores): «Cómo usar este curso», «Tu cuaderno» y «Mis notas».
+- **Plegar todo** (icono de cheurones convergentes): aparece al desplazarse hasta el itinerario y contrae los módulos, sin texto junto al icono.
+- **Tu progreso**: barra compacta y contador **módulos completados / 9**, situada inmediatamente encima del itinerario y fijada durante el desplazamiento.
+- **Pie de página**: autoría, fuentes y **versión de interfaz v5.5** al final del contenido.
+- **Idioma**: flecha del desplegable ampliada en todas las pantallas.
+
+En **escritorio** se conserva la disposición de tres columnas de la v5.4. Se mantienen los mismos datos de progreso, destacados globales, los tres PDF y los metadatos para compartir.
+
 ## Interfaz v5.4 — Legibilidad y navegación
 
 Esta versión incorpora las primeras mejoras de experiencia de lectura solicitadas por los participantes:

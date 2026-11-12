@@ -2,6 +2,16 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.5 — Navegación responsive y progreso compacto (2026-11-13)
+
+- Nueva interfaz para teléfonos en ambas orientaciones y tabletas en vertical: portada inmediata tras logotipo y lema.
+- Dos botones flotantes siempre visibles: **Menú** (idioma, filtros, navegación) y **Herramientas** (uso, cuaderno y notas), con paneles a pantalla completa, escape y navegación con teclado.
+- Botón flotante **Plegar todo**, representado con dos cheurones convergentes, que aparece al alcanzar el itinerario formativo.
+- Progreso compacto **X / 9 módulos**, barra de avance fijada encima del itinerario durante el desplazamiento.
+- Autoría y versión v5.5 reubicadas en el footer de los dispositivos compactos.
+- Flecha del selector de idioma más grande, incluidos los escritorios.
+- Preservados los contenidos, los tres PDFs, las anotaciones, las imágenes sociales y los estados guardados.
+
 ## V5.4 — Lectura más cómoda y menos información simultánea
 
 - Aumento de la tipografía general y del texto de lección a 18 px (17 px en móvil).
