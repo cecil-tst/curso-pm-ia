@@ -2,6 +2,15 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.6 — Controles flotantes ordenados y aviso en flujo (2026-11-13)
+
+- El botón Herramientas utiliza una **llave inglesa** en lugar de deslizadores.
+- Fila flotante en dispositivos compactos: **progreso X / 9 → plegar todo → herramientas → menú**, manteniendo el menú al extremo derecho.
+- Barra de progreso de **anchura compacta**, integrada en la misma fila flotante.
+- El aviso «Selecciona el texto que quieras destacar…» se sitúa antes del itinerario y deja de ser flotante, sin duplicarse.
+- La distribución se adapta a teléfonos estrechos, móviles horizontales, tabletas verticales y escritorio.
+- No se alteran datos de progreso, anotaciones, PDFs ni metadatos Open Graph.
+
 ## V5.5 — Navegación responsive y progreso compacto (2026-11-13)
 
 - Nueva interfaz para teléfonos en ambas orientaciones y tabletas en vertical: portada inmediata tras logotipo y lema.

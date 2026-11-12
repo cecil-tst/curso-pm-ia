@@ -16,6 +16,19 @@
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
 
+## Interfaz v5.6 — Barra compacta y aviso de destacados
+
+En móviles de ambas orientaciones y tabletas verticales, los elementos flotantes aparecen **en una única fila, de izquierda a derecha**:
+
+1. Barra pequeña de progreso **X / 9 módulos**.
+2. **Plegar todo**, cuando se alcanza el itinerario.
+3. **Herramientas** con icono de **llave inglesa**.
+4. **Menú**, situado en el extremo derecho.
+
+El bloque de ayuda **«Selecciona el texto que quieras destacar…»** aparece entre la portada y el itinerario, **dentro del flujo de la página y sin posición flotante**. En escritorio permanece en su ubicación anterior, junto a las opciones de búsqueda y filtros.
+
+Esta versión conserva las lecciones, los filtros, los comentarios y destacados compartidos, las descargas PDF y las imágenes de vista previa.
+
 ## Interfaz v5.5 — Experiencia móvil y tableta vertical
 
 En **móvil (vertical y horizontal) y tableta en vertical** la portada empieza inmediatamente después del logotipo y «Aprender · Construir · Verificar». Se ocultan las columnas laterales y los controles originales se trasladan sin duplicarse a dos paneles de **pantalla completa**:
