@@ -693,7 +693,7 @@ function openOverlay(which){
  panel.hidden=false;document.body.classList.add('mobile-overlay-open');document.querySelector('.layout').inert=true;
  buttonMenu.setAttribute('aria-expanded',String(which==='menu'));buttonTools.setAttribute('aria-expanded',String(which==='tools'));
  // Keep search and filters collapsed each time the full-screen menu opens.
- if(which==='menu'&&typeof setTools==='function')setTools(true);
+ if(which==='menu'&&typeof setTools==='function')setTools(false);
  panel.querySelector('.mobile-overlay-close')?.focus({preventScroll:true});
 }
 function onSizeChange(){
