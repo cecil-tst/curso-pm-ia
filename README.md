@@ -22,7 +22,7 @@ En móvil (vertical y horizontal) y tableta vertical, el menú de pantalla compl
 
 La barra de progreso flotante es **más ancha y está centrada verticalmente**. El botón de Herramientas (llave inglesa) queda más próximo al de Menú, que sigue situado en el extremo derecho.
 
-El botón **Plegar todo** usa cheurones orientados hacia el centro, como el patrón de contracción de conversaciones de Gmail. Es **independiente del grupo principal**, flotando junto al margen inferior izquierdo. Solo aparece cuando hay abierto algún módulo del itinerario o apartado de Recursos reutilizables, y al activarlo pliega esos elementos **sin desplazar deliberadamente la lectura al comienzo**. Si el contenido se acorta, el navegador puede limitar la posición vertical al final disponible.
+El botón **Plegar todo** usa dos cheurones orientados hacia el centro, ligeramente separados, con el mismo color y grosor de trazo que la llave inglesa de Herramientas. Comparte la fila flotante y se coloca **inmediatamente a la izquierda del progreso**, seguido de Herramientas y Menú. Solo aparece cuando hay algún módulo de contenido o sección de navegación desplegada y, al activarlo, cierra esos elementos **sin desplazar deliberadamente la lectura al comienzo**. Si el contenido se acorta, el navegador puede limitar la posición vertical al final disponible.
 
 No cambia ningún contenido formativo, PDF, anotación compartida, metadato social ni favicon. El diseño de escritorio se conserva.
 
