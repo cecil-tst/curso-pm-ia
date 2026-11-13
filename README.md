@@ -16,6 +16,16 @@
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
 
+## Interfaz v5.7 — Refinamientos responsive
+
+En móvil (vertical y horizontal) y tableta vertical, el menú de pantalla completa ahora muestra **«Búsqueda y filtros» plegado al abrirse**, incluso si el lector lo había abierto antes. El selector de idioma tiene tipografía, altura de tarjeta y tamaño de flecha alineados con el panel de búsqueda y filtros.
+
+La barra de progreso flotante es **más ancha y está centrada verticalmente**. El botón de Herramientas (llave inglesa) queda más próximo al de Menú, que sigue situado en el extremo derecho.
+
+El botón **Plegar todo** usa cheurones orientados hacia el centro, como el patrón de contracción de conversaciones de Gmail. Es **independiente del grupo principal**, flotando junto al margen inferior izquierdo. Solo aparece cuando hay abierto algún módulo del itinerario o apartado de Recursos reutilizables, y al activarlo pliega esos elementos **sin desplazar deliberadamente la lectura al comienzo**. Si el contenido se acorta, el navegador puede limitar la posición vertical al final disponible.
+
+No cambia ningún contenido formativo, PDF, anotación compartida, metadato social ni favicon. El diseño de escritorio se conserva.
+
 ## Interfaz v5.6 — Barra compacta y aviso de destacados
 
 En móviles de ambas orientaciones y tabletas verticales, los elementos flotantes aparecen **en una única fila, de izquierda a derecha**:
