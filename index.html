@@ -479,11 +479,10 @@ h3,.lesson-top h3{font-size:20px;line-height:1.38}
   .mobile-float-controls>#floatTools{order:2!important;margin-right:-5px!important;}
   .mobile-float-controls>#floatMenu{order:3!important;margin-left:-5px!important;}
   .mobile-float-controls>#mobileProgress{order:0!important;}
-  /* Gmail-style inward chevrons, isolated on the left edge. */
-  #floatCollapse.mobile-standalone-fold{display:grid!important;place-items:center!important;position:fixed!important;z-index:155!important;top:calc(env(safe-area-inset-top) + 92px)!important;left:calc(env(safe-area-inset-left) + 8px)!important;right:auto!important;bottom:auto!important;margin:0!important;border-radius:11px!important;background:#fff!important;color:#4b5051!important;border:1px solid #d4ddda!important;box-shadow:0 5px 18px #183f4733!important;width:44px!important;height:44px!important;padding:7px!important;touch-action:manipulation!important;}
-  #floatCollapse.mobile-standalone-fold[hidden]{display:none!important;}
-  #floatCollapse.mobile-standalone-fold svg{width:29px!important;height:29px!important;stroke-width:2.6!important;stroke-linecap:round!important;stroke-linejoin:round!important;}
-  #floatCollapse.mobile-standalone-fold:hover,#floatCollapse.mobile-standalone-fold:focus-visible{background:#eaf5f1!important;outline-offset:2px!important;}
+  /* Collapse belongs to the same floating row as progress, to its left. */
+  .mobile-float-controls>#floatCollapse{order:-1!important;color:#12686e!important;background:transparent!important;border-color:transparent!important;box-shadow:none!important;}
+  .mobile-float-controls>#floatCollapse svg{stroke:currentColor!important;stroke-width:2.1!important;stroke-linecap:round!important;stroke-linejoin:round!important;}
+  .mobile-float-controls>#floatCollapse:hover,.mobile-float-controls>#floatCollapse:focus-visible{background:#e3f2ed!important;border-color:#accdc1!important;}
 }
 @media (max-width:600px){
  .mobile-float-controls>#mobileProgress{flex-basis:118px!important;width:118px!important;min-height:42px!important;height:42px!important;padding:6px 7px!important;gap:6px!important;}
@@ -496,13 +495,11 @@ h3,.lesson-top h3{font-size:20px;line-height:1.38}
  .mobile-float-controls>#mobileProgress{flex-basis:100px!important;width:100px!important;min-height:39px!important;height:39px!important;padding:5px!important;gap:4px!important;}
  .mobile-float-controls .mobile-progress-count{font-size:12px!important;}
  .mobile-float-controls{gap:5px!important;}
- #floatCollapse.mobile-standalone-fold{width:40px!important;height:40px!important;left:6px!important;top:calc(env(safe-area-inset-top) + 106px)!important;}
 }
 @media (max-height:440px) and (orientation:landscape){
  .mobile-float-controls>#mobileProgress{height:37px!important;min-height:37px!important;flex-basis:113px!important;width:113px!important;}
- #floatCollapse.mobile-standalone-fold{top:calc(env(safe-area-inset-top) + 96px)!important;width:39px!important;height:39px!important;}
 }
-@media print{#floatCollapse.mobile-standalone-fold{display:none!important;}}
+@media print{#floatCollapse{display:none!important;}}
 </style></head>
 <body><div class="layout">
 <aside class="nav"><div class="logo"><span class="mark">P+</span><span>PM / IA</span></div><div class="nav-motto">Aprender · Construir · Verificar</div><div class="progress-wrap"><div class="kicker">Tu progreso</div><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div><small id="progressText">0 de 36 lecciones</small></div><div class="nav-heading">NAVEGACIÓN</div><nav aria-label="NAVEGACIÓN" class="sidenav" id="sidenav"><details class="nav-group" id="navModules"><summary><span>▤ &nbsp;Itinerario formativo</span><span aria-hidden="true" class="nav-arrow"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span></summary><div class="nav-module-list" id="navModuleItems"></div></details><details class="nav-group" id="navResources"><summary><span>✧ &nbsp;Recursos reutilizables</span><span aria-hidden="true" class="nav-arrow"><svg fill="none" height="18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.6" viewbox="0 0 24 24" width="18"><path d="m6 9 6 6 6-6"></path></svg></span></summary><div class="nav-resource-list"><button class="nav-primary" data-anchor="prompts" type="button"><span aria-hidden="true">✧</span> Prompts</button><button class="nav-primary" data-anchor="glossary" type="button"><span aria-hidden="true">◈</span> Glosario</button><button class="nav-primary" data-anchor="workshops" type="button"><span aria-hidden="true">▧</span> Guía de impartición</button><button class="nav-primary" data-anchor="checks" type="button"><span aria-hidden="true">☑</span> Lista de verificación</button><button class="nav-primary" data-anchor="sources" type="button"><span aria-hidden="true">▣</span> Fuentes</button></div></details></nav><p class="nav-foot"><strong>Curso elaborado por Cecil Servan.</strong> Basado en 7 vídeos de Javier Garzás · Marcas temporales enlazadas directamente a YouTube.</p><div class="interface-version">Versión de interfaz · v5.7</div></aside>
@@ -763,7 +760,7 @@ progress.parentNode.insertBefore(progressMarker,progress);
 tip.parentNode.insertBefore(tipMarker,tip);
 function reconcile(){
   if(mq.matches){
-    group.append(progress,fold,tools,menu);
+    group.append(fold,progress,tools,menu);
     slot.appendChild(tip);
   }else{
     progressMarker.parentNode.insertBefore(progress,progressMarker.nextSibling);
@@ -782,7 +779,7 @@ const modules=document.getElementById('modules');
 const resources=document.querySelector('.misc');
 if(!fold||!group||!modules||!resources)return;
 const foldIcon=fold.querySelector('svg');
-if(foldIcon){foldIcon.innerHTML='<path d="M5 4L12 10L19 4M5 20L12 14L19 20"/>';}
+if(foldIcon){foldIcon.innerHTML='<path d="M5 3L12 9L19 3M5 21L12 15L19 21"/>';}
 let scheduled=false;
 function anyOpened(){return !!document.querySelector('#modules details.module[open], .misc details[open], #navModules[open], #navResources[open]');}
 function refresh(){
@@ -791,13 +788,14 @@ function refresh(){
 }
 function refreshLater(){if(scheduled)return;scheduled=true;requestAnimationFrame(refresh);}
 function position(){
+ // Keep the fold control immediately before progress, in the same floating row.
  if(breakpoint.matches){
-  if(fold.parentElement!==document.body)document.body.appendChild(fold);
-  fold.classList.add('mobile-standalone-fold');
+  const progress=document.getElementById('mobileProgress');
+  if(fold.parentElement!==group || fold.nextElementSibling!==progress)group.insertBefore(fold,progress);
  }else{
   if(fold.parentElement!==group)group.insertBefore(fold,document.getElementById('floatTools'));
-  fold.classList.remove('mobile-standalone-fold');
  }
+ fold.classList.remove('mobile-standalone-fold');
  refreshLater();
 }
 // Override the original auto-scroll fold handler without altering course content.
