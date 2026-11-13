@@ -706,7 +706,7 @@ function onSizeChange(){
  updateFoldButton();updateCompactProgress();
 }
 function updateFoldButton(){
- buttonFold.hidden=!mobile||!document.querySelector('#modules details.module[open], .misc details[open]');
+ buttonFold.hidden=!mobile||!document.querySelector('#modules details.module[open], .misc details[open], #navModules[open], #navResources[open]');
 }
 function updateCompactProgress(){
  // Count entire modules, not individual lessons. Source of truth is the same state as the main progress bar.
@@ -784,7 +784,7 @@ if(!fold||!group||!modules||!resources)return;
 const foldIcon=fold.querySelector('svg');
 if(foldIcon){foldIcon.innerHTML='<path d="M5 7h14M7 9.5l5 4 5-4M7 18l5-4 5 4"/>';}
 let scheduled=false;
-function anyOpened(){return !!document.querySelector('#modules details.module[open], .misc details[open]');}
+function anyOpened(){return !!document.querySelector('#modules details.module[open], .misc details[open], #navModules[open], #navResources[open]');}
 function refresh(){
  scheduled=false;
  fold.hidden=!breakpoint.matches||!anyOpened();
@@ -805,7 +805,7 @@ fold.addEventListener('click',event=>{
  event.stopImmediatePropagation();
  event.preventDefault();
  const y=window.scrollY;
- document.querySelectorAll('#modules details.module[open], .misc details[open]').forEach(d=>{d.open=false;});
+ document.querySelectorAll('#modules details.module[open], .misc details[open], #navModules[open], #navResources[open]').forEach(d=>{d.open=false;});
  // Scroll remains at the user's position when the remaining page height allows it.
  const oldBehavior=document.documentElement.style.scrollBehavior;
  document.documentElement.style.scrollBehavior='auto';
@@ -820,11 +820,12 @@ fold.addEventListener('click',event=>{
 // The old v5.5 scroll callback still invokes updateFoldButton: changes to module
 // attributes and content will always recalculate visibility from open state.
 document.addEventListener('toggle',event=>{
- if(event.target.matches?.('#modules details.module, .misc details'))refreshLater();
+ if(event.target.matches?.('#modules details.module, .misc details, #navModules, #navResources'))refreshLater();
 },true);
 const obs=new MutationObserver(refreshLater);
 obs.observe(modules,{subtree:true,childList:true,attributes:true,attributeFilter:['open']});
 obs.observe(resources,{subtree:true,childList:true,attributes:true,attributeFilter:['open']});
+for(const id of ['navModules','navResources']){const groupNode=document.getElementById(id);if(groupNode)obs.observe(groupNode,{attributes:true,attributeFilter:['open']});}
 if(breakpoint.addEventListener)breakpoint.addEventListener('change',position);else breakpoint.addListener(position);
 position();
 })();</script>
