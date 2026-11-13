@@ -7,7 +7,7 @@ Historial descriptivo del curso. La publicación sigue la rama `main` del reposi
 - «Búsqueda y filtros» aparece **cerrado al abrir el menú de móvil/tableta**, con apertura voluntaria.
 - Selector de idioma armonizado con búsqueda/filtros: tarjeta de igual altura, tipografía, flecha y tonos de fondo.
 - Barra flotante de progreso más ancha, centrada verticalmente; Menú y Herramientas con menor separación.
-- «Plegar todo» solo se muestra si hay módulos de contenido o recursos reutilizables **efectivamente abiertos**. Se coloca aislado en el margen inferior izquierdo con icono de cheurones convergentes.
+- «Plegar todo» solo aparece si hay módulos de contenido o grupos de navegación **efectivamente abiertos**. Se integra en la misma fila flotante, **a la izquierda del progreso**, con dos cheurones convergentes más separados y el mismo color y grosor que Herramientas.
 - El plegado ya no ejecuta `scrollIntoView`; intenta conservar la posición vertical, dentro de los límites de la altura del documento.
 - Sin cambios en lecciones, PDFs, datos de usuario, tarjetas sociales ni versión de escritorio.
 
