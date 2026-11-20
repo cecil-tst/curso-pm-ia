@@ -16,6 +16,25 @@
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
 
+## Interfaz v5.8 — Laboratorio Nexo Digital (2026-11-20)
+
+El itinerario incorpora **5 prácticas empresariales + 1 avanzada opcional** basadas en Nexo Digital, una agencia ficticia de estrategia digital, publicidad, diseño, contenido, webs, intranets, CRM y analítica comercial. Las prácticas se añaden **dentro de las lecciones existentes**: se mantienen los 9 módulos y las 36 lecciones.
+
+| Práctica | Caso | Lección |
+| --- | --- | --- |
+| 01 · Skill de reporting | UrbanFit · informes W45/W46, prueba de activación y calidad | M04 L4 |
+| 02 · Auditoría iterativa | CasaVerde · presupuesto, dependencias y go-live | M07 L3; refuerzo en M09 L4 |
+| 03 · Discovery guiado | MedNova · CRM e intranet, entrevista secuencial | M02 L2 |
+| 04 · Actas y decisiones | CasaVerde · cambios entre dos reuniones | M04 L1 |
+| 05 · Dashboard auditable | DistribuMax · datos de ventas, cobros y pipeline | M05 L1; refuerzo en M04 L3 |
+| 06 · Multiagente, opcional | UrbanFit · comparar varios agentes frente a uno | M08 L1/L3 |
+
+**Material del alumno:** [Nexo Digital · ZIP de 39 archivos](assets/Nexo_Digital_Material_Alumno_v1.zip) (≈60 KB), servido como archivo estático. Incluye instrucciones, datos ficticios, CSV, Excel, plantillas y rúbricas. **Las guías del ZIP están en español**; las fichas y los controles del curso se muestran en español, inglés o catalán. El solucionario docente no se distribuye públicamente.
+
+Los ejercicios pueden realizarse sin integraciones ni credenciales de clientes reales; no consumen Vercel Blob. No se añaden nuevas funciones de almacenamiento: siguen intactos los identificadores de lecciones, la clave `pm_ia_course_v3`, el progreso en `localStorage`, las anotaciones y los destacados.
+
+Los tres PDF `_v5.pdf` siguen siendo la guía base de las 36 lecciones y **no incluyen el nuevo material Nexo**; para las prácticas hay que utilizar las fichas online y el ZIP.
+
 ## Interfaz v5.7 — Refinamientos responsive
 
 En móvil (vertical y horizontal) y tableta vertical, el menú de pantalla completa ahora muestra **«Búsqueda y filtros» plegado al abrirse**, incluso si el lector lo había abierto antes. El selector de idioma tiene tipografía, altura de tarjeta y tamaño de flecha alineados con el panel de búsqueda y filtros.
