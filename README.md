@@ -10,11 +10,18 @@
 
 | Idioma | Página | PDF |
 | --- | --- | --- |
-| Español | [Inicio](https://curso-pm-ia.vercel.app/) · [`index.html`](index.html) | [PDF ES](Curso_PM_IA_formacion_es_v5.pdf) |
-| English | [English course](https://curso-pm-ia.vercel.app/en.html) · [`en.html`](en.html) | [PDF EN](Curso_PM_IA_formacion_en_v5.pdf) |
-| Català | [Curs en català](https://curso-pm-ia.vercel.app/ca.html) · [`ca.html`](ca.html) | [PDF CA](Curso_PM_IA_formacion_ca_v5.pdf) |
+| Español | [Inicio](https://curso-pm-ia.vercel.app/) · [`index.html`](index.html) | [PDF ES](Curso_PM_IA_formacion_es_v6.pdf) |
+| English | [English course](https://curso-pm-ia.vercel.app/en.html) · [`en.html`](en.html) | [PDF EN](Curso_PM_IA_formacion_en_v6.pdf) |
+| Català | [Curs en català](https://curso-pm-ia.vercel.app/ca.html) · [`ca.html`](ca.html) | [PDF CA](Curso_PM_IA_formacion_ca_v6.pdf) |
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
+
+## Interfaz v5.8.2 — PDF con Javier Garzás y Xavier Mitjana (2026-11-20)
+
+- Se actualizan las descargas PDF en español, inglés y catalán: `Curso_PM_IA_formacion_{es,en,ca}_v6.pdf`. Los PDF v5 anteriores permanecen disponibles por compatibilidad.
+- Cada PDF conserva sus 19 páginas originales y añade un anexo de 2 páginas con atribución a **Javier Garzás y Xavier Mitjana**, las fuentes de los 11 vídeos, sus enlaces y **14 referencias temporizadas** de Xavier asociadas a lecciones concretas.
+- El botón de descarga de cada versión de la web utiliza el **PDF v6 actualizado embebido**, idéntico al fichero estático de la misma lengua. Se mantienen intactos los 9 módulos, 36 lecciones, la clave de progreso y el ZIP de Nexo Digital.
+- Nota editorial: se preserva íntegro el cuerpo anterior de la guía (edición v5); la ampliación de fuentes se incorpora al final como anexo, para no reescribir ni alterar el material original.
 
 ## Interfaz v5.8.1 — Navegación, fuentes y enlaces a Xavier Mitjana (2026-11-20)
 
@@ -43,7 +50,7 @@ El itinerario incorpora **5 prácticas empresariales + 1 avanzada opcional** bas
 
 Los ejercicios pueden realizarse sin integraciones ni credenciales de clientes reales; no consumen Vercel Blob. No se añaden nuevas funciones de almacenamiento: siguen intactos los identificadores de lecciones, la clave `pm_ia_course_v3`, el progreso en `localStorage`, las anotaciones y los destacados.
 
-Los tres PDF `_v5.pdf` siguen siendo la guía base de las 36 lecciones y **no incluyen el nuevo material Nexo**; para las prácticas hay que utilizar las fichas online y el ZIP.
+Los PDF `_v6.pdf` conservan la guía base y añaden las referencias a Xavier Mitjana en un anexo. Los ejercicios de Nexo Digital continúan documentados en la web y el ZIP.
 
 ## Interfaz v5.7 — Refinamientos responsive
 
