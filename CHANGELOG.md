@@ -2,6 +2,13 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.8.2 — PDFs ampliados con fuentes de Xavier Mitjana (2026-11-20)
+
+- Tres PDF v6 en ES/EN/CA: cuerpo original íntegro, anexo de fuentes con Javier Garzás y Xavier Mitjana y catorce enlaces temporizados a los vídeos de Xavier.
+- Se sincronizan los PDF embebidos en las tres páginas con los nuevos PDF estáticos, de modo que el botón «Descargar curso en PDF» entrega el contenido actualizado.
+- Sin nuevos servicios externos, sin Vercel Blob, sin cambios de progreso o anotaciones.
+- Los ficheros PDF v5 permanecen en el repositorio como archivo histórico.
+
 ## V5.8.1 — Fuentes de Xavier Mitjana y acceso al laboratorio (2026-11-20)
 
 - Botón **Prácticas Nexo Digital** en Menú → Recursos reutilizables, con apertura del panel correspondiente.
