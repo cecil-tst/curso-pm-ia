@@ -2,6 +2,16 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.8 — Laboratorio Nexo Digital (2026-11-20)
+
+- Se añaden cinco prácticas aplicadas y una avanzada opcional al temario existente sin modificar el número ni los identificadores de lecciones.
+- Agencia ficticia con cuatro clientes: UrbanFit (reporting y multiagente), CasaVerde (auditoría y reuniones), MedNova (discovery de CRM/intranet) y DistribuMax (dashboard comercial verificable).
+- Las fichas tienen pasos concretos, archivos de entrada, entregables, duración estimada y criterios de aceptación en ES/EN/CA.
+- Nuevo panel de laboratorio dentro de «Recursos reutilizables» y bloques desplegables en las lecciones relevantes.
+- Se distribuye el ZIP del alumno (39 archivos) como recurso estático sin Vercel Blob; el solucionario docente no se publica.
+- Se conservan los PDF v5 como guía base; las nuevas prácticas se presentan en HTML y ZIP (guías descargables en español).
+- No se modifican estructura, progreso `localStorage`, anotaciones, navegación responsive, enlaces a vídeos ni marcas de tiempo.
+
 ## V5.7 — Filtros plegados, desplegable uniforme y plegado contextual (2026-11-13)
 
 - «Búsqueda y filtros» aparece **cerrado al abrir el menú de móvil/tableta**, con apertura voluntaria.
