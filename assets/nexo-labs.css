@@ -23,3 +23,9 @@ details.nexo-lab>summary strong{font-size:1rem;font-weight:750;flex-basis:100%}
 .nexo-hub h3{margin:14px 0 7px;color:#154f55}
 .nexo-hub p{margin:3px 0 10px}
 @media(max-width:640px){details.nexo-lab>summary{padding:13px 12px}.nexo-body{padding:12px 12px 17px}.nexo-download{width:100%;font-size:.87rem}.nexo-facts{font-size:.75rem}}
+
+/* Source list: show the original videos grouped by their creator. */
+.source-channel-group{min-width:0;padding:1px 0 8px}
+.source-channel-group+.source-channel-group{padding-top:12px;border-top:1px solid #dce5e5}
+.source-channel-group h3{font-size:.91rem;color:#164c51;margin:0 0 9px;font-weight:800}
+.source-channel-group>div{line-height:1.45;margin:6px 0;overflow-wrap:anywhere}

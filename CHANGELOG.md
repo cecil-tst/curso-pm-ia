@@ -2,6 +2,14 @@
 
 Historial descriptivo del curso. La publicación sigue la rama `main` del repositorio [cecil-tst/curso-pm-ia](https://github.com/cecil-tst/curso-pm-ia), conectada automáticamente con Vercel.
 
+## V5.8.1 — Fuentes de Xavier Mitjana y acceso al laboratorio (2026-11-20)
+
+- Botón **Prácticas Nexo Digital** en Menú → Recursos reutilizables, con apertura del panel correspondiente.
+- En Fuentes se incorporan cuatro vídeos de Xavier Mitjana y se distinguen visualmente de los de Javier Garzás.
+- Se añaden 14 referencias directas a minutos y segundos contrastados con las transcripciones originales, en las lecciones pertinentes.
+- Créditos editoriales, portada y metadatos referencian a ambos creadores sin contadores de vídeos o duraciones obsoletas.
+- Sin alterar contenidos anteriores de las 36 lecciones, claves locales, destacados o material descargable; los PDF v5 permanecen como guía base.
+
 ## V5.8 — Laboratorio Nexo Digital (2026-11-20)
 
 - Se añaden cinco prácticas aplicadas y una avanzada opcional al temario existente sin modificar el número ni los identificadores de lecciones.

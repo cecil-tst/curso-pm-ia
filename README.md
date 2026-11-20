@@ -1,6 +1,6 @@
 # PM/IA — Project & Product Management con IA
 
-**Curso interactivo trilingüe** creado por **Cecil Servan**, a partir de **7 vídeos públicos de Javier Garzás**. Los vídeos originales se mantienen en español.
+**Curso interactivo trilingüe** creado por **Cecil Servan**, a partir de **vídeos públicos de Javier Garzás y Xavier Mitjana**. Los vídeos originales se mantienen en español.
 
 **Producción:** https://curso-pm-ia.vercel.app  
 **Código:** https://github.com/cecil-tst/curso-pm-ia  
@@ -15,6 +15,16 @@
 | Català | [Curs en català](https://curso-pm-ia.vercel.app/ca.html) · [`ca.html`](ca.html) | [PDF CA](Curso_PM_IA_formacion_ca_v5.pdf) |
 
 El selector de idioma muestra **solo nombres** («Español», «English», «Català»), **sin banderas**.
+
+## Interfaz v5.8.1 — Navegación, fuentes y enlaces a Xavier Mitjana (2026-11-20)
+
+- En «Menú → Recursos reutilizables», acceso directo a **Prácticas Nexo Digital**, que abre el panel de laboratorio.
+- Se incorporan las transcripciones contrastadas de **cuatro vídeos de Xavier Mitjana**, publicados en YouTube: [Gauntlet Prompt](https://www.youtube.com/watch?v=sc6PJpFyrvY), [entrada/salida/filtro](https://www.youtube.com/watch?v=hRCohhAxs7I), [proyectos y agentes](https://www.youtube.com/watch?v=nZaOSQffA8M) y [evaluación de skills](https://www.youtube.com/watch?v=wr3XorJcPCs).
+- Las **Fuentes** agrupan 11 vídeos por creador (Javier Garzás y Xavier Mitjana), sin indicar cantidades en las atribuciones editoriales.
+- Se añaden **14 enlaces temporizados** distribuidos en lecciones de prompting, documentación, dashboards, discovery, prototipos, agentes y validación. Las marcas de tiempo proceden de las transcripciones facilitadas.
+- Se eliminan los contadores de vídeos y duración obsoletos de portada, metadatos, sidebar y textos auxiliares.
+- Se mantienen **los mismos 9 módulos, 36 lecciones, textos de lecciones, IDs, progreso `localStorage` y estructura de anotaciones**.
+- Los PDF descargables siguen siendo la edición base v5, no reeditada en esta corrección.
 
 ## Interfaz v5.8 — Laboratorio Nexo Digital (2026-11-20)
 
